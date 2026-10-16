@@ -37,6 +37,3 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         return JSONResponse(status_code=404, content={"detail": str(exc)})
 
     return app
-
-
-app = create_app()
